@@ -1,6 +1,6 @@
-import instagram from '../assets/instagram.svg'
-import youtube from '../assets/youtube.svg'
-import linkedin from '../assets/linkedin.svg'
+const instagram = '/assets/instagram.svg'
+const youtube = '/assets/youtube.svg'
+const linkedin = '/assets/linkedin.svg'
 
 const items = [
   { name: 'Instagram', icon: instagram },

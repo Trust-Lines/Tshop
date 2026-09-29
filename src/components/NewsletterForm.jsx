@@ -1,4 +1,6 @@
-import arrow from '../assets/arrow-right-2.svg'
+'use client'
+
+const arrow = '/assets/arrow-right-2.svg'
 
 export default function NewsletterForm() {
   return (

@@ -1,4 +1,4 @@
-import mascot from '../assets/mascot.png'
+const mascot = '/assets/mascot.png'
 
 export default function Hero() {
   return (

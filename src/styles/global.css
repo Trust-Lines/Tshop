@@ -40,7 +40,7 @@ img { display: block; max-width: 100%; }
   position: relative;
   height: 1015px;
   overflow: hidden;
-  background: linear-gradient(var(--dark), var(--dark)), url('../assets/hero-bg.png') left top / cover no-repeat;
+  background: linear-gradient(var(--dark), var(--dark)), url('/assets/hero-bg.png') left top / cover no-repeat;
   text-align: center;
 }
 .hero__text {

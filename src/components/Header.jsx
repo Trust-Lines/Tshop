@@ -1,4 +1,4 @@
-import logo from '../assets/logo-header.svg'
+const logo = '/assets/logo-header.svg'
 
 export default function Header() {
   return (

@@ -7,10 +7,10 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 html, body { margin: 0; }
-html { background: #1e1e1e; }
+html { background: #fff; }
 body {
   font-family: 'Montserrat Variable', Montserrat, sans-serif;
-  background: #1e1e1e;
+  background: #fff;
   color: #fff;
   -webkit-font-smoothing: antialiased;
 }
@@ -79,13 +79,17 @@ img { display: block; max-width: 100%; }
 }
 
 /* ---------- Header ---------- */
-.header {
+.header-wrap {
   position: sticky;
   z-index: 10;
-  top: 27px;
+  top: 0;
+  height: 0;
+}
+.header {
   width: 1354px;
   height: 72px;
-  margin: 27px auto -99px;
+  margin: 0 auto;
+  transform: translateY(27px);
   border-radius: 999px;
   background: var(--red);
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
@@ -216,7 +220,7 @@ img { display: block; max-width: 100%; }
 /* ---------- Mobile (no zoom, own layout) ---------- */
 @media (max-width: 700px) {
   :root { --gutter: 20px; }
-  .header { top: 16px; width: calc(100% - 32px); height: 56px; margin: 16px auto -72px; padding: 0 6px 0 4px; }
+  .header { width: calc(100% - 32px); height: 56px; transform: translateY(16px); padding: 0 6px 0 4px; }
   .header__logo img { width: 130px; height: auto; }
   .header__cta { width: 160px; height: 44px; font-size: 15px; }
   .hero__text h1 { font-size: clamp(34px, 10vw, 64px); line-height: 1.2; letter-spacing: -0.03em; }

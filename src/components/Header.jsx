@@ -2,6 +2,7 @@ const logo = '/assets/logo-header.svg'
 
 export default function Header() {
   return (
+    <div className="header-wrap">
     <header className="header">
       <a className="header__logo" href="/" aria-label="T Shop Online Store">
         <img src={logo} alt="T Shop Online Store" width="194" height="60" />
@@ -10,5 +11,6 @@ export default function Header() {
         START NOW
       </a>
     </header>
+    </div>
   )
 }
